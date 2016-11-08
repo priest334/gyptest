@@ -1,9 +1,9 @@
 #ifdef WIN32
-#	define EXPORTAPI __declspec(dllexport)
-#	define IMPORTAPI __declspec(dllimport)
+#  define EXPORTAPI __declspec(dllexport)
+#  define IMPORTAPI __declspec(dllimport)
 #else
-#	define EXPORTAPI __attribute__((visibility("default")))
-#	define IMPORTAPI 
+#  define EXPORTAPI __attribute__((visibility("default")))
+#  define IMPORTAPI 
 #endif
 
 
